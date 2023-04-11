@@ -1,0 +1,11 @@
+body{
+    background-color: dimgray;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+ header img{ 
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
