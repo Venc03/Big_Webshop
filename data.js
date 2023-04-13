@@ -1,9 +1,9 @@
 export const dataList = [
     {
         Pic: "",
-        Picname:"",
-        Description:"",
-        Cost: "",
+        Picname:"hello",
+        Description:"nagylo",
+        Cost: "23123123",
     },
     {
         Pic: "",

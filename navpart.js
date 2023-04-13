@@ -1,11 +1,11 @@
 const LIST = [
-    { link: "../adminpart/admin.html", tag: "Admin" },
+    { link: "../admin.html", tag: "Admin" },
     { link: "../index.html", tag: "User" },
-    { link: "../cart/cart.html", tag: "Cart" },
+    { link: "../cart.html", tag: "Cart" },
   ];
 
-  const PICS = [{src: "../pics/fokep.png", alt:"webshop"}];
-  const STYLE = [{src:"../style.css"}];
+  const PICS = [{src: "./pics/fokep.png", alt:"webshop"}];
+  const STYLE = [{src:"./style.css"}];
   
 
 
@@ -13,14 +13,15 @@ const LIST = [
     const NAV = $("nav");
     const HEAD = $("header");
     const META = $("head");
-    
+    const FOOTER = $("footer");
     let metakiir = metatag();
     let navkiir = nav();
     let headerkiir = Headerpics();
+    let footerkiir = footer();
     NAV.append(navkiir);
     HEAD.append(headerkiir);
     META.append(metakiir);
-  
+    FOOTER.append(footerkiir);
   });
 
 
@@ -31,7 +32,6 @@ const LIST = [
         text += `<div><a class="col p-3 text-light" href='${LIST[index].link}'>${LIST[index].tag}</a></div>`;
       }
       text += `</div></div>`
-      console.log(text);
       return text;
   }
 
@@ -43,7 +43,6 @@ const LIST = [
         text += `<img class=" rounded "  src="${PICS[index].src}" alt="${PICS[index].alt}">`;
       }
       text += `</div>`
-      console.log(text);
       return text;
   }
 
@@ -54,6 +53,12 @@ const LIST = [
       for (let index = 0; index < STYLE.length; index++) {
         text += `<link rel="stylesheet" href="${STYLE[index].src}">`;
       }
-      console.log(text);
       return text;
   }
+
+
+
+  function footer() {
+    let text = "Végi Dániel Márk";
+    return text;
+}
