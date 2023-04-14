@@ -27,7 +27,7 @@ const LIST = [
 
 
   function nav() {
-      let text = `<div class="container-fluid "><div class="d-flex p-2 bg-dimgray">`;
+      let text = `<div class="container-fluid "><div class="d-flex p-2 bg-dimgray" style="backdrop-filter: blur(20px)">>`;
       for (let index = 0; index < LIST.length; index++) {
         text += `<div><a class="col p-3 text-light" href='${LIST[index].link}'>${LIST[index].tag}</a></div>`;
       }
@@ -40,7 +40,7 @@ const LIST = [
   function Headerpics() {
       let text = `<div>`;
       for (let index = 0; index < PICS.length; index++) {
-        text += `<img class=" rounded "  src="${PICS[index].src}" alt="${PICS[index].alt}">`;
+        text += `<img class="rounded"  src="${PICS[index].src}" alt="${PICS[index].alt}">`;
       }
       text += `</div>`
       return text;

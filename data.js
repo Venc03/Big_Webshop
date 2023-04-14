@@ -1,26 +1,29 @@
-export const dataList = [
+export const DATALIST = [
     {
-        Pic: "",
-        Picname:"hello",
-        Description:"nagylo",
-        Cost: "23123123",
+        Name:"Friday 13th",
+        Description:"Horror, Action",
+        Cost: "3400 Ft",
     },
     {
-        Pic: "",
-        Picname:"",
-        Description:"",
-        Cost: "",
+        Name:"Kingsman 1",
+        Description:"Action",
+        Cost: "2640 Ft",
     },
     {
-        Pic: "",
-        Picname:"",
-        Description:"",
-        Cost: "",
+        Name:"Kingsman 2",
+        Description:"Action",
+        Cost: "3640 Ft",
     },
     {
-        Pic: "",
-        Picname:"",
-        Description:"",
-        Cost: "",
+        Name:"Gentelmens",
+        Description:"Action, Drama",
+        Cost: "2890 Ft",
     },
+]
+
+export const PICLIST = [
+    "./pics/friday13th.png",
+    "./pics/kingsman.png",
+    "./pics/kingsman2.png",
+    "./pics/gentelmens.jpg"
 ]
